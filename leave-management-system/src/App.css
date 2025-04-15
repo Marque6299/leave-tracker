@@ -1,0 +1,220 @@
+/* Main application styles */
+
+/* Body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* General container styles */
+.main-container {
+  min-height: calc(100vh - 60px - 56px); /* Adjust for navbar and footer height */
+  padding-bottom: 2rem;
+}
+
+/* Navbar styles */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Form styles */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.form-control, .form-select {
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  border-color: #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Button styles */
+.btn {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+/* Badge styles */
+.badge {
+  font-weight: 500;
+  padding: 0.4em 0.7em;
+}
+
+/* Status colors */
+.status-approved {
+  color: #198754;
+}
+
+.status-rejected {
+  color: #dc3545;
+}
+
+.status-pending {
+  color: #fd7e14;
+}
+
+/* Dashboard stats */
+.stats-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Table styles */
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Calendar styles */
+.react-datepicker {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.react-datepicker__day--selected {
+  background-color: #0d6efd;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: rgba(13, 110, 253, 0.2);
+  border-radius: 4px;
+}
+
+/* Notification styles */
+.notification-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.notification-item:hover {
+  background-color: #f8f9fa;
+}
+
+.notification-item.unread {
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+.notification-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.notification-time {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+/* Admin panel styles */
+.admin-sidebar {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.admin-sidebar .nav-link {
+  color: #343a40;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+}
+
+.admin-sidebar .nav-link:hover {
+  background-color: #f8f9fa;
+}
+
+.admin-sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .stats-value {
+    font-size: 1.5rem;
+  }
+  
+  .admin-sidebar {
+    margin-bottom: 1rem;
+  }
+} 
