@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0;url=docs/index.html">
+  <title>PLS Leave Tracker - Redirecting</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 80%;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PLS Leave Tracker</h1>
+    <p>You are being redirected to the application...</p>
+    <div class="loader"></div>
+    <p>If you are not redirected automatically, <a href="docs/index.html">click here</a>.</p>
+  </div>
+
+  <script>
+    // Redirect to the docs/index.html page
+    window.location.href = "docs/index.html";
+  </script>
+</body>
+</html> 
